@@ -1,0 +1,18 @@
+# Archivos de configuración sensibles
+config.ini
+credenciales.txt
+vpn.ovpn
+*.xlsx
+*.log
+
+# Archivos temporales / sistema
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.DS_Store
+Thumbs.db
+
+# Archivos generados
+avance_combinado_total.xlsx

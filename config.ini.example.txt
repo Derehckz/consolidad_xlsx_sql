@@ -1,0 +1,46 @@
+# === CONFIGURACIÓN DE CONEXIÓN VPN ===
+[VPN]
+# Ruta al ejecutable de OpenVPN
+openvpn_path = C:/Program Files/OpenVPN/bin/openvpn.exe
+
+# Ruta al archivo de configuración .ovpn
+ovpn_file = C:/ruta/a/tu/archivo/vpn.ovpn
+
+# Ruta al archivo con tus credenciales (usuario y contraseña)
+auth_file = C:/ruta/a/tu/archivo/credenciales.txt
+
+
+# === CONFIGURACIÓN DE CONEXIÓN SQL ===
+[SQL]
+# Dirección IP o hostname del servidor SQL
+server = 192.168.1.100
+
+# Usuario SQL
+username = tu_usuario_sql
+
+# Contraseña SQL
+password = tu_contraseña_segura
+
+# Nombre exacto del driver ODBC instalado
+driver = ODBC Driver 18 for SQL Server
+
+
+# === RUTAS DE ARCHIVOS ===
+[Paths]
+# Ruta base donde están los archivos del proyecto
+base_dir = C:/ruta/a/tu/carpeta/proyecto
+
+# Nombre del archivo Excel de entrada (dentro del base_dir)
+input_excel = banner.xlsx
+
+# Nombre del archivo Excel de salida
+output_excel = avance_combinado_total.xlsx
+
+# Número de hoja del archivo Excel (0 para la primera)
+excel_sheet = 0
+
+
+# === CONSULTAS SQL A EJECUTAR ===
+[Consultas]
+ST_IPLL = SELECT * FROM ST_IPLL.dbo.VW_AVANCE_ACADEMICO
+ST_CFTLL = SELECT * FROM ST_CFTLL.dbo.VW_AVANCE_ACADEMICO
